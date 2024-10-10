@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>変数_JavaScript_授業_練習03</title>
+</head>
+
+<body>
+    <p id="result">文字が大きくなる</p>
+    <button id="plus">+</button>
+
+    <script>
+        //要素を指定して変数に代入
+        const plus = document.getElementById('plus');
+
+        //変数内に格納された要素をクリックしたら、function内の命令が実行される
+        result.addEventListener('click', function () {
+            result.style.fontSize = '16px';
+        });
+
+    </script>
+</body>
+
+</html>
+
+<!-- 答え -->
+<!-- <body>
+    <p id="result">文字が大きくなる</p>
+    <button id="plus">+</button>
+
+    <script>
+        let num = 16;
+        const result = document.getElementById('result');
+        const plusBtn = document.getElementById('plus');
+
+        plusBtn.addEventListener('click', function () {
+            num += 1;
+            result.style.fontSize = `${num}px`;
+        });
+    </script>
+</body> -->
+
+
+<!-- 参考 -->
+<!-- let val = 1;
+console.log('url(' + val + '.png)'); -->
+
+<!-- <script>
+
+        /* functionの外に　let num = 0;　を書かないと
+           毎回０を代入して１を足すから結果が変わらない。*/
+        let num = 0;
+        const result = document.getElementById('result');
+        const plusBtn = document.getElementById('plus');
+        plusBtn.innerHTML = "+";
+
+        plusBtn.addEventListener('click', function () {
+            num += 1;
+            result.innerHTML = num;
+            console.log(num);
+        });
+
+    </script> -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>変数_JavaScript_授業_練習02</title>
+</head>
+
+<body>
+    <p id="result">0</p>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+
+
+    <script>
+        // //要素を指定して変数に代入
+        // const submit = document.getElementById('plus');
+
+        // //変数内に格納された要素をクリックしたら、function内の命令が実行される
+        // submit.addEventListener('click', function () {
+        //     let name = plus;
+        //     let plus = 0;
+        //     plus = plus + 1;
+        //     console.log(plus);
+        // });
+
+
+        /* functionの外に　let num = 0;　を書かないと
+           毎回０を代入して１を足すから結果が変わらない。*/
+        let num = 0;
+        const minus = document.getElementById('minus');
+        const result = document.getElementById('result');
+        const plusBtn = document.getElementById('plus');
+        plusBtn.innerHTML = "+";
+        minus.innerHTML = "-"
+
+        plusBtn.addEventListener('click', function () {
+            num += 1;
+            result.innerHTML = num;
+            console.log(num);
+        });
+
+        minus.addEventListener('click', function () {
+            num -= 1;
+            result.innerHTML = num;
+            console.log(num);
+        });
+
+        // num -= 1;
+        // result.innerHTML = num;
+        // // }));
+
+        // let val = 1;
+        // console.log('url(' + val + '.png)')
+
+    </script>
+</body>
+
+</html>
